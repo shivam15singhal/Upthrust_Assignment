@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Workflow Automation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mini Workflow Automation</h1>
+
+  <div class="container">
+    <label for="prompt">Enter Prompt:</label>
+    <input type="text" id="prompt" placeholder="Write a tweet about today’s weather" />
+
+    <label for="action">Select Action:</label>
+    <select id="action">
+      <option value="">-- Choose Action --</option>
+      <option value="weather">Weather</option>
+      <option value="github">GitHub</option>
+      <option value="news">News</option>
+    </select>
+
+    <!-- ✅ Buttons explicitly set as type="button" -->
+    <button id="runBtn" type="button">Run Workflow</button>
+    <button id="refreshBtn" type="button">🔄 Refresh History</button>
+
+    <div class="output" id="result"></div>
+  </div>
+
+  <h3 class="history_head">History</h3>
+  <div id="history"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
